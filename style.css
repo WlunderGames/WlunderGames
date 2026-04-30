@@ -9,10 +9,12 @@ body {
 }
 
 nav {
+    border-color: #2c3033;
+    border-style: solid;
+    border-width: 2px;
     position: fixed;
     width: 100%;
-    background-color: #10101055;
-    backdrop-filter: blur(10px);
+    background-color: #212426;
 }
 
 nav ul {
@@ -22,7 +24,7 @@ nav ul {
     align-items: center;
 }
 
-nav a {
+nav a, .bar_button {
     transition: background-color 0.25s;
     padding: 0px 20px;
     height: 100%;
@@ -33,11 +35,11 @@ nav a {
     align-items: center;
 }
 
-nav a:hover {
+nav a:hover, .bar_button:hover {
     background-color: #2c3033;
 }
 
-nav li {
+nav li, .bar_button {
     height: 50px;
 }
 
@@ -47,4 +49,24 @@ nav li:first-child {
 
 .nav_icon {
     height: 50px;
+}
+
+.sidebar {
+    border-color: #2c3033;
+    border-style: solid;
+    border-width: 2px;
+    position: fixed;
+    top: 0px;
+    right: 15%;
+    background-color: #212426;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 100;
+
+}
+
+.sidebar li{
+    width: 100%;
 }
