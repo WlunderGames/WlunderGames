@@ -19,6 +19,6 @@ window.onscroll = function (e)
 {
     const max = document.documentElement.scrollHeight - window.innerHeight
     var scroll = Math.floor(window.scrollY/max*191)+1;
-    anim.src=(`frames_spin/(${scroll}).png`);
+    anim.src=(`frames_spin/${scroll}.png`);
     //anim.src="img (" + scroll.toString() + ").jpg"
 };
