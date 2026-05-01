@@ -57,7 +57,7 @@ nav li:first-child {
     border-width: 2px;
     position: fixed;
     top: 0px;
-    right: 15%;
+    right: 0px;
     background-color: #212426;
     display: none;
     flex-direction: column;
