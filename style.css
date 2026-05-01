@@ -4,11 +4,11 @@
     padding: 0;
 }
 body {
-    min-height: 100vh;
-    background-image: linear-gradient(180deg, #2c3033, #101010);
+    min-height: 200vh;
 }
 
 nav {
+    z-index: 100;
     border-color: #2c3033;
     border-style: solid;
     border-width: 2px;
@@ -63,7 +63,7 @@ nav li:first-child {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    z-index: 100;
+    z-index: 200;
 
 }
 
@@ -74,4 +74,6 @@ nav li:first-child {
 
 .anim_bg{
     width: 100%;
+    position: fixed;
+    top: -100px;
 }
