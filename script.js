@@ -15,6 +15,22 @@ sidebar.addEventListener("mouseout", (event) => {
     sidebar.style.display = "none";
 });
 const anim = document.querySelector(".anim_bg");
+const total = 192;
+let loaded = 0;
+
+for (let i = 1; i <= total; i++) {
+  const img = new Image();
+  img.src = `frames_spin/{i}.png`;
+
+  img.onload = () => {
+    loaded++;
+    console.log(`Cargadas: ${loaded}/${total}`);
+    
+    if (loaded === total) {
+      console.log("Todas las imágenes cargadas");
+    }
+  };
+}
 window.onscroll = function (e)
 {
     const max = document.documentElement.scrollHeight - window.innerHeight
