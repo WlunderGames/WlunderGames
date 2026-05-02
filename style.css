@@ -72,8 +72,13 @@ nav li:first-child {
 }
 
 
-.anim_bg{
-    width: 100%;
+.anim_bg {
     position: fixed;
-    top: -100px;
+    z-index: 10;
+}
+
+.anim_container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
