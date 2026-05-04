@@ -56,11 +56,11 @@ const tl = gsap.timeline({
 
 tl.to(first_title, {
     opacity: 0,
-    //x: "-=50vw",
+    //x: "-=20vw",
     duration: 1,
 }).to(second_title, {
     opacity: 0,
-   // x: "+=50vw",
+    //x: "+=10vw",
     duration: 1,
 });
 
@@ -100,7 +100,7 @@ for (let i = 1; i <= total; i++) {
 window.onscroll = function (e)
 {
     const max = document.documentElement.scrollHeight - window.innerHeight
-    var scroll = Math.floor(window.scrollY/max*191)+1;
+    var scroll = Math.floor(window.scrollY/max*192)+1;
     anim.src=(`frames_spin/${scroll}.png`);
     //anim.src="img (" + scroll.toString() + ").jpg"
 };

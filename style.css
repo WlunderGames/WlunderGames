@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    min-height: 240vh;
+    min-height: 300vh;
 }
 
 nav {
@@ -80,7 +80,9 @@ nav li:first-child {
 }
 
 .anim_container {
-    height: 110vh;
+    height: 100vh;
+    position: relative;
+    top: 50px;
     display: grid;
     place-items: center;
 }
@@ -88,16 +90,21 @@ nav li:first-child {
     color: white;
     z-index: 20;
     position: absolute;
-    font-size: 8em;
+    font-size: 8rem;
     top: 25px;
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
 }
 .second_title {
     color: white;
     z-index: 20;
     position: absolute;
-    font-size: 5em;
+    font-size: 4rem;
+    margin-bottom: 1vh;
     bottom: 0%;
-    right: 0%;
+    width: 100%;
+    text-align: center;
 }
 .title {
     font-family: "Anton";
