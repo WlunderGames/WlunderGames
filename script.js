@@ -2,6 +2,8 @@ const sidebar = document.querySelector(".sidebar");
 const bar_button = document.querySelector(".bar_button");
 const first_title = document.querySelector(".first_title");
 const second_title = document.querySelector(".second_title");
+const quienes_somos = document.querySelector(".quienessomos");
+const text_title = document.querySelector(".text_title");
 const lenis = new Lenis({
     autoRaf: true,
 });
@@ -53,7 +55,25 @@ const tl = gsap.timeline({
     },
 
 });
+const tl2 = gsap.timeline({
 
+
+
+    scrollTrigger: {
+
+        trigger: quienes_somos ,
+
+        start: "top 40%",
+
+        end: "+=150%",
+
+        pin: quienes_somos,
+
+        scrub: 1 /* Sincronizada con el scroll */,
+
+    },
+
+});
 tl.to(first_title, {
     opacity: 0,
     //x: "-=20vw",
@@ -61,6 +81,10 @@ tl.to(first_title, {
 }).to(second_title, {
     opacity: 0,
     //x: "+=10vw",
+    duration: 1,
+});
+tl2.to(text_title, {
+    y: "-80%",
     duration: 1,
 });
 
@@ -100,7 +124,7 @@ for (let i = 1; i <= total; i++) {
 window.onscroll = function (e)
 {
     const max = document.documentElement.scrollHeight - window.innerHeight
-    var scroll = Math.floor(window.scrollY/max*192)+1;
+    var scroll = Math.floor(window.scrollY/max*191)+1;
     anim.src=(`frames_spin/${scroll}.png`);
     //anim.src="img (" + scroll.toString() + ").jpg"
 };

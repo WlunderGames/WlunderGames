@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    min-height: 300vh;
+    min-height: 500vh;
 }
 
 nav {
@@ -110,4 +110,35 @@ nav li:first-child {
     font-family: "Anton";
     font-style: normal;
     font-weight: 400;
+    padding-right: 20vh;
+    margin-left: 20vh;
+    text-align: center;
+}
+
+.text_title {
+    font-family: "Ariaasdl";
+    font-size: 1rem;
+    width: 25%;
+    text-align: left;
+    margin-top: 10vh 0vw;
+    margin-right: 20vh;
+}
+.quienessomos {
+    justify-content: space-between;
+    color: white;
+    z-index: 20;
+    position: absolute;
+    margin: 1vh;
+    font-size: 5rem;
+    top: 150vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+
+}
+
+.razones {
+    position: relative;
+    top: 350vh;
+    display: flex
 }
