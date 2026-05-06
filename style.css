@@ -110,8 +110,6 @@ nav li:first-child {
     font-family: "Anton";
     font-style: normal;
     font-weight: 400;
-    padding-right: 20vh;
-    margin-left: 20vh;
     text-align: center;
 }
 
@@ -120,11 +118,10 @@ nav li:first-child {
     font-size: 1rem;
     width: 25%;
     text-align: left;
-    margin-top: 10vh 0vw;
-    margin-right: 20vh;
+    margin: 10vh 0vh;
 }
 .quienessomos {
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     z-index: 20;
     position: absolute;
