@@ -113,29 +113,51 @@ nav li:first-child {
     text-align: center;
 }
 
-.text_title {
-    font-family: "Ariaasdl";
-    font-size: 1rem;
-    width: 25%;
-    text-align: left;
-    margin: 10vh 0vh;
-}
-.quienessomos {
+
+.somos_container {
+    display: flex;
+    position: relative;
+    top: 50vh;
     justify-content: space-evenly;
+    align-items: center;
+}
+.text_title {
+    font-family: "Arial";
+    font-size: 16px;
+    color:white;
+    width: 300px;
+    transform: translateY(50%);
+}
+
+.quienessomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-text: center;
+    border-left: #535b61 5px solid;
+}
+
+.quienessomos span {
+    font-family: "Anton";
     color: white;
-    z-index: 20;
+    font-size: 55px;
+    margin: 0px 20px;
+}
+.razones {
     position: absolute;
-    margin: 1vh;
-    font-size: 5rem;
-    top: 150vh;
+    top: 400vh;
     width: 100%;
     display: flex;
-    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 20;
+    transform: translateX(100vw);
 
 }
 
-.razones {
-    position: relative;
-    top: 350vh;
-    display: flex
+.razones li {
+    list-style: none;
+    color: white;
+    background-color: red;
 }

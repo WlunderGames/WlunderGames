@@ -2,8 +2,9 @@ const sidebar = document.querySelector(".sidebar");
 const bar_button = document.querySelector(".bar_button");
 const first_title = document.querySelector(".first_title");
 const second_title = document.querySelector(".second_title");
-const quienes_somos = document.querySelector(".quienessomos");
+const quienes_somos = document.querySelector(".somos_container");
 const text_title = document.querySelector(".text_title");
+const razones = document.querySelector(".razones");
 const lenis = new Lenis({
     autoRaf: true,
 });
@@ -63,11 +64,30 @@ const tl2 = gsap.timeline({
 
         trigger: quienes_somos ,
 
-        start: "top 40%",
+        start: "top 15%",
 
         end: "+=150%",
 
         pin: quienes_somos,
+
+        scrub: 1 /* Sincronizada con el scroll */,
+
+    },
+
+});
+const tl3 = gsap.timeline({
+
+
+
+    scrollTrigger: {
+
+        trigger: razones ,
+
+        start: "top 50%",
+
+        end: "200vh",
+
+        pin: razones,
 
         scrub: 1 /* Sincronizada con el scroll */,
 
@@ -84,7 +104,11 @@ tl.to(first_title, {
     duration: 1,
 });
 tl2.to(text_title, {
-    y: "-80%",
+    y: "-50%",
+    duration: 1,
+});
+tl3.to(razones, {
+    x: "-100%",
     duration: 1,
 });
 
