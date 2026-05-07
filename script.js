@@ -83,9 +83,9 @@ const tl3 = gsap.timeline({
 
         trigger: razones ,
 
-        start: "top 50%",
+        start: "top -4%",
 
-        end: "200vh",
+        end: "300%",
 
         pin: razones,
 
@@ -106,10 +106,19 @@ tl.to(first_title, {
 tl2.to(text_title, {
     y: "-50%",
     duration: 1,
+}).to(quienes_somos, {
+    opacity: 0,
+    duration: 0.1,
 });
-tl3.to(razones, {
-    x: "-100%",
+tl3.from(razones, {
+    x: "-200%",
+    duration: 0,
+}).to(razones, {
+    x: "-200%",
     duration: 1,
+}).to(razones, {
+    opacity: 0,
+    duration: 0.1,
 });
 
 bar_button.addEventListener("mouseover", (event) => {
