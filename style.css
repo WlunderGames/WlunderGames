@@ -221,3 +221,17 @@ nav li:first-child {
     justify-content: start;
     align-items: center;
 }
+
+.footer a {
+    transition: all 0.25s;
+    color: white;
+    text-decoration: underline;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footer a:hover {
+    color: gray;
+    text-decoration: none;
+    padding-left: 20px;
