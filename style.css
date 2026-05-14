@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    min-height: 1800vh;
+    max-height: 6vh;
 }
 
 nav {
@@ -195,4 +195,29 @@ nav li:first-child {
     color: white;
     text-align: center;
     font-size: 102px;
+}
+
+.footer {
+    position: absolute;
+    top: 840vh;
+    width: 100%;
+    z-index: 25;
+    border-top: #2c3033 solid 4px;
+    background-color: #212426;
+}
+
+.footer ul {
+    padding: 15px;
+    list-style: none;
+    color: white;
+}
+
+.footer-sub {
+     font-family: "Anton";
+}
+
+.footer li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
