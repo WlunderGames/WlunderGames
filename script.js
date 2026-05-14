@@ -150,7 +150,7 @@ for (let i = 1; i <= total; i++) {
         console.log(`Cargadas: ${loaded}/${total}`);
 
         if (loaded === total) {
-            console.log(`Todas las imágenes cargadas ${img[1]}`);
+            console.log(`/WlunderGames/frames_spin/${i}.png`);
         }
     };
 }
