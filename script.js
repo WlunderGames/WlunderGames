@@ -143,7 +143,7 @@ let loaded = 0;
 
 for (let i = 1; i <= total; i++) {
     const img = new Image();
-    img.src = `frames_spin/${i}.png`;
+    img.src = `/WlunderGames/frames_spin/${i}.png`;
 
     img.onload = () => {
         loaded++;
@@ -158,6 +158,6 @@ window.onscroll = function (e)
 {
     const max = document.documentElement.scrollHeight - window.innerHeight
     var scroll = Math.floor(window.scrollY/max*191)+1;
-    anim.src=(`frames_spin/${scroll}.png`);
+    anim.src=(`/WlunderGames/frames_spin/${scroll}.png`);
     //anim.src="img (" + scroll.toString() + ").jpg"
 };
