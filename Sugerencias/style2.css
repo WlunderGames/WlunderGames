@@ -117,3 +117,12 @@ nav li:first-child {
     padding-left: 20px;
 
 }
+
+.encuesta {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    
+}
