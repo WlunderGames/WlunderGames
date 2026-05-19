@@ -1,0 +1,139 @@
+* {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+nav {
+    z-index: 100;
+    border-color: #2c3033;
+    border-style: solid;
+    border-width: 2px;
+    position: fixed;
+    width: 100%;
+    background-color: #212426;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a, .bar_button {
+    transition: background-color 0.25s;
+    padding: 0px 20px;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover, .bar_button:hover {
+    background-color: #2c3033;
+}
+
+nav li, .bar_button {
+    height: 50px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.nav_icon {
+    height: 50px;
+}
+
+.sidebar {
+    opacity: 0;
+    transition: all 0.5s;
+    border-color: #2c3033;
+    border-style: solid;
+    border-width: 2px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #212426;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 200;
+
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.anim_container {
+    height: 100vh;
+    position: relative;
+    top: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.footer {
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    z-index: 25;
+    border-top: #2c3033 solid 4px;
+    background-color: #212426;
+}
+
+.footer ul {
+    padding: 15px;
+    list-style: none;
+    color: white;
+}
+
+.footer-sub {
+     font-family: "Anton";
+}
+
+.footer li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer a {
+    transition: all 0.25s;
+    color: white;
+    text-decoration: underline;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footer a:hover {
+    color: gray;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+.encuesta {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+
+}
+.geS5n {
+    background-color: #393d41;
+    border-color: #565c61;
+}
+.M7eMe {
+    color: white;
+}
+.aDTYNe {
+    color: gray;
+}
