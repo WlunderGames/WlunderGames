@@ -118,11 +118,22 @@ nav li:first-child {
 
 }
 
-iframe {
+.encuesta {
     position: absolute;
+    top: 200%;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 10;
 
+}
+.geS5n {
+    background-color: #393d41;
+    border-color: #565c61;
+}
+.M7eMe {
+    color: white;
+}
+.aDTYNe {
+    color: gray;
 }
