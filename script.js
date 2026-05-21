@@ -64,7 +64,7 @@ const tl2 = gsap.timeline({
 
         trigger: quienes_somos ,
 
-        start: "top 15%",
+        start: "top 50vh",
 
         end: "+=150%",
 
