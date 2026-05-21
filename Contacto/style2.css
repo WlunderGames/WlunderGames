@@ -166,15 +166,15 @@ nav li:first-child {
 }
 
 #itemCarrousel-1{
-    background-color: rgb(226, 50, 50);
+    background-color: #4e555b;
 }
 
 #itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
+    background-color: #4e555b;
 }
 
 #itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
+    background-color: #4e555b;
 }
 
 .conteCarrouselController{
