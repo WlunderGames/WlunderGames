@@ -235,3 +235,6 @@ nav li:first-child {
     color: gray;
     text-decoration: none;
     padding-left: 20px;
+.title_section {
+    margin-top:10em;
+}
