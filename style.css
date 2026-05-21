@@ -128,6 +128,9 @@ nav li:first-child {
     width: 300px;
     transform: translateY(50%);
 }
+.title_section {
+    margin-top: 10em;
+}
 
 .quienessomos {
     display: flex;
@@ -235,6 +238,3 @@ nav li:first-child {
     color: gray;
     text-decoration: none;
     padding-left: 20px;
-.title_section {
-    margin-top:10em;
-}
