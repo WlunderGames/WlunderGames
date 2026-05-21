@@ -137,8 +137,9 @@ nav li:first-child {
 
 .itemCarrousel{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60vh;
+    height: 60vh;
+    margin: 0 auto;
 }
 
 .itemCarrouselTarjeta{
