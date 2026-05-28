@@ -133,7 +133,9 @@ nav li:first-child {
 .title_section {
     margin-top: 10em;
 }
-
+.title_section p {
+    font-family: "Oswald", sans-serif;
+}
 .quienessomos {
     display: flex;
     flex-direction: column;
