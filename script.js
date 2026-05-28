@@ -95,11 +95,11 @@ const tl3 = gsap.timeline({
 });
 tl.to(first_title, {
     opacity: 0,
-    //x: "-=20vw",
+    x: "-=50%",
     duration: 1,
 }).to(second_title, {
     opacity: 0,
-    //x: "+=10vw",
+    x: "+=50%",
     duration: 1,
 });
 tl2.to(text_title, {
